@@ -1,0 +1,36 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Description: >
+  BeeSkilled CloudHub AWS Week 4 Serverless Infrastructure
+
+Resources:
+
+  ContactTable:
+
+    Type: AWS::DynamoDB::Table
+
+    Properties:
+
+      TableName: BeeSkilledContacts
+
+      BillingMode: PAY_PER_REQUEST
+
+      AttributeDefinitions:
+
+        - AttributeName: id
+          AttributeType: S
+
+      KeySchema:
+
+        - AttributeName: id
+          KeyType: HASH
+
+
+Outputs:
+
+  DynamoDBTableName:
+
+    Description: DynamoDB Contact Table
+
+    Value:
+      Ref: ContactTable

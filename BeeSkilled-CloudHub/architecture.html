@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Architecture | BeeSkilled CloudHub</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">
+☁ BeeSkilled CloudHub
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="projects.html">Projects</a>
+<a href="architecture.html" class="active">Architecture</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<a href="dashboard.html" class="nav-button">
+Dashboard
+</a>
+
+</header>
+
+
+<section class="page-hero">
+
+<span class="section-label">
+SYSTEM ARCHITECTURE
+</span>
+
+<h1>
+Serverless AWS Architecture
+</h1>
+
+<p>
+A scalable architecture connecting frontend, API,
+serverless compute and cloud database services.
+</p>
+
+</section>
+
+
+<section class="section">
+
+<div class="architecture">
+
+<div class="architecture-node">
+
+<span>👤</span>
+
+<h3>User</h3>
+
+<p>Web Browser</p>
+
+</div>
+
+
+<div class="arrow">
+↓
+</div>
+
+
+<div class="architecture-node">
+
+<span>🪣</span>
+
+<h3>Amazon S3</h3>
+
+<p>Static Website</p>
+
+</div>
+
+
+<div class="arrow">
+↓
+</div>
+
+
+<div class="architecture-node">
+
+<span>🔗</span>
+
+<h3>API Gateway</h3>
+
+<p>REST API</p>
+
+</div>
+
+
+<div class="arrow">
+↓
+</div>
+
+
+<div class="architecture-node">
+
+<span>λ</span>
+
+<h3>AWS Lambda</h3>
+
+<p>Serverless Processing</p>
+
+</div>
+
+
+<div class="arrow">
+↓
+</div>
+
+
+<div class="architecture-node">
+
+<span>🗄️</span>
+
+<h3>DynamoDB</h3>
+
+<p>Contact Database</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section light-section">
+
+<div class="section-heading">
+
+<span class="section-label">
+DATA FLOW
+</span>
+
+<h2>
+How the Application Works
+</h2>
+
+</div>
+
+
+<div class="flow-grid">
+
+<div class="flow-card">
+
+<strong>01</strong>
+
+<h3>User submits form</h3>
+
+<p>
+The user enters their name, email and message.
+</p>
+
+</div>
+
+
+<div class="flow-card">
+
+<strong>02</strong>
+
+<h3>API Gateway receives request</h3>
+
+<p>
+The REST endpoint receives the application request.
+</p>
+
+</div>
+
+
+<div class="flow-card">
+
+<strong>03</strong>
+
+<h3>Lambda processes data</h3>
+
+<p>
+The serverless function validates and processes the request.
+</p>
+
+</div>
+
+
+<div class="flow-card">
+
+<strong>04</strong>
+
+<h3>DynamoDB stores data</h3>
+
+<p>
+The contact information is stored in the cloud database.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footer-bottom">
+
+© 2026 BeeSkilled CloudHub
+
+</div>
+
+</footer>
+
+</body>
+</html>
